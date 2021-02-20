@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+.container {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #f8f8ff;
+  width: 28%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  background: #4e0dea;
+  padding: 4px;
+}
+
+.back-btn {
+  width: 35px;
+  height: 100%;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.back-btn span {
+  display: block;
+  height: 3px;
+  width: 75%;
+  background: #e6e8e7;
+  margin: 5px;
+}
+
+span.top-line,
+span.bottom-line {
+  width: 45%;
+  border-radius: 30px;
+}
+span.top-line {
+  transform: rotate(-42deg);
+  transform-origin: 10px 4px;
+}
+
+span.bottom-line {
+  transform: rotate(42deg);
+  transform-origin: 10px -1px;
+}
+
+.profile-photo {
+  width: 41px;
+  height: 90%;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-name {
+  padding-left: 10px;
+  font-size: 20px;
+}
+.active-status {
+  padding-left: 5px;
+  font-size: 11.5px;
+}
+
+.chats {
+  flex: 1;
+  overflow-y: scroll;
+  background: linear-gradient(45deg, #b8b9f5, #234654);
+}
+
+.chat {
+  padding: 8px 10px;
+}
+.chats::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chats::-webkit-scrollbar-thumb {
+  background: blanchedalmond;
+}
+.chats::-webkit-scrollbar-track {
+  background: #8e97ff;
+}
+
+.chats::-webkit-scrollbar-track:hover {
+  background: #8e97ff;
+}
+.chat-sent {
+  display: flex;
+  margin-left: auto;
+  max-width: 85%;
+}
+.chat-received {
+  display: flex;
+  margin-right: auto;
+  max-width: 85%;
+}
+
+.message-sent {
+  margin-left: auto;
+  background: green;
+  padding: 10px;
+  border-radius: 20px;
+}
+.message-received {
+  padding: 10px;
+  border-radius: 20px;
+  background: #a9a9af;
+}
+.text-area {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(45deg, #b8b9f5, #234654);
+}
+
+.text-area input {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 90px;
+  outline: none;
+  width: 100%;
+  height: 45px;
+  color: black;
+  border-radius: 20px;
+  border: none;
+}
+.send-button {
+  width: 80px;
+  border-radius: 20px;
+  border: none;
+  color: rgb(0, 0, 0);
+}
+.send-button:focus {
+  border: none;
+}
+.encryptKey input::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.encryptKey h2 {
+  color: black;
+}
+.decryptKey h2 {
+  color: black;
+}
+.encryptKey input {
+  display: block;
+  width: 65px;
+  height: 35px;
+  color: black;
+  margin-top: 10px;
+}
+.decryptKey input {
+  display: block;
+  margin-top: 10px;
+  width: 65px;
+  height: 35px;
+  color: black;
+}
